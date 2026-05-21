@@ -377,11 +377,22 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
 @media (max-width: 740px) {
   nav { padding: 0 20px; }
   section { padding: 72px 20px; }
-  .screenshots-section { padding: 16px 20px 72px; overflow: hidden; }
-  /* phones: hide sides on small screens, show only center large */
-  .phones-row { gap: 12px; justify-content: center; }
-  .hero-phone.side { display: none; }
+  .screenshots-section { padding: 16px 0 72px; overflow: hidden; }
+  /* swipeable carousel — scroll snap, one phone at a time */
+  .phones-row {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 8px calc(50% - 130px) 24px;
+  }
+  .phones-row::-webkit-scrollbar { display: none; }
+  .hero-phone.side { display: flex; transform: none; }
   .hero-phone.center { transform: none; }
+  .hero-phone { scroll-snap-align: center; }
+  .hero-phone.side .phone-frame { width: 260px; }
   .hero-phone.center .phone-frame { width: 260px; }
   .problem-wrap { margin: 0 16px; padding: 64px 28px; }
   .stats-wrap { margin: 0 16px; padding: 56px 24px; }
