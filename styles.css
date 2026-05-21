@@ -167,7 +167,7 @@ section { padding: 112px 40px; }
   max-width: 580px; margin-bottom: 64px; line-height: 1.7;
 }
 .solution-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 .solution-card {
@@ -362,6 +362,7 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
   .hero-phone.center .phone-frame { width: 244px; }
   .hero-phone.side { transform: translateY(40px); }
   .gap-cards { grid-template-columns: 1fr; }
+  .solution-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
 }
 @media (max-width: 740px) {
