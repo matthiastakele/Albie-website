@@ -80,10 +80,11 @@ section { padding: 112px 40px; }
 /* ── Hero ── */
 .hero {
   padding-top: calc(var(--nav-h) + 96px);
-  padding-bottom: 120px;
+  padding-bottom: 0;
   text-align: center;
+  overflow: hidden;
 }
-.hero-inner { max-width: 740px; margin: 0 auto; }
+.hero-inner { max-width: 740px; margin: 0 auto; padding: 0 40px 0; }
 
 .hero-logo-wrap {
   display: flex; justify-content: center;
@@ -296,53 +297,42 @@ section { padding: 112px 40px; }
 .form-success h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
 .form-success p { color: var(--text-secondary); font-size: 16px; }
 
-/* ── App Screenshots ── */
+/* ── Hero Phones ── */
 .mockup-lead {
   font-size: 18px; color: var(--text-secondary);
   max-width: 540px; line-height: 1.7; margin-bottom: 72px;
 }
-.screenshots-section {
-  padding: 0 40px 96px;
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(82,179,240,0.07) 0%, transparent 70%);
-  overflow: hidden;
+.hero-phones {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 72px;
+  padding: 0 20px;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 46%, transparent 84%);
+  mask-image: linear-gradient(to bottom, black 0%, black 46%, transparent 84%);
+  pointer-events: none;
 }
-.phones-row {
-  display: flex; gap: 24px; align-items: flex-end; justify-content: center;
-}
-.phone-wrap { flex-shrink: 0; transition: transform 0.3s ease; }
-.phone-wrap.side { transform: translateY(48px); }
-.phone-wrap.center { transform: translateY(0); }
-.phone-wrap:hover { transform: translateY(-10px) !important; }
+.hero-phone { flex-shrink: 0; }
+.hero-phone.side { transform: translateY(56px); }
+.hero-phone.center { transform: translateY(0); }
 .phone-frame {
   background: #1A1A1C;
   border-radius: 52px;
   padding: 11px;
   box-shadow:
-    0 32px 80px rgba(0,0,0,0.26),
-    0 8px 24px rgba(0,0,0,0.16),
+    0 40px 100px rgba(0,0,0,0.28),
+    0 10px 30px rgba(0,0,0,0.18),
     inset 0 0 0 1.5px rgba(255,255,255,0.09);
 }
-.phone-wrap.side .phone-frame { width: 252px; }
-.phone-wrap.center .phone-frame { width: 288px; }
+.hero-phone.side .phone-frame { width: 256px; }
+.hero-phone.center .phone-frame { width: 296px; }
 .phone-screen {
   border-radius: 43px;
   overflow: hidden;
   line-height: 0;
 }
 .phone-screen img { width: 100%; display: block; }
-@media (max-width: 860px) {
-  .screenshots-section { padding: 0 0 72px; }
-  .phones-row { gap: 16px; }
-  .phone-wrap.side .phone-frame { width: 200px; }
-  .phone-wrap.center .phone-frame { width: 230px; }
-  .phone-wrap.side { transform: translateY(36px); }
-}
-@media (max-width: 600px) {
-  .phones-row { overflow-x: auto; justify-content: flex-start; padding: 0 20px 20px; scrollbar-width: none; }
-  .phones-row::-webkit-scrollbar { display: none; }
-  .phone-wrap.side, .phone-wrap.center { transform: translateY(0); }
-  .phone-wrap.side .phone-frame, .phone-wrap.center .phone-frame { width: 220px; }
-}
 
 /* ── Footer ── */
 footer { border-top: 1px solid var(--border); padding: 40px 40px; }
@@ -372,6 +362,11 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
   .gap-cards { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
 }
+@media (max-width: 860px) {
+  .hero-phone.side .phone-frame { width: 210px; }
+  .hero-phone.center .phone-frame { width: 245px; }
+  .hero-phone.side { transform: translateY(44px); }
+}
 @media (max-width: 740px) {
   nav { padding: 0 20px; }
   section { padding: 80px 20px; }
@@ -381,8 +376,13 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
   .form-row-2 { grid-template-columns: 1fr; }
   .contact-form-card { padding: 28px 20px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .hero { padding-top: calc(var(--nav-h) + 56px); padding-bottom: 80px; }
+  .hero { padding-top: calc(var(--nav-h) + 48px); }
+  .hero-inner { padding-bottom: 0; }
   .hero h1 { font-size: clamp(36px, 10vw, 56px); }
   .hero-sub { font-size: 17px; }
+  .hero-phones { gap: 12px; margin-top: 52px; }
+  .hero-phone.side .phone-frame { width: 168px; }
+  .hero-phone.center .phone-frame { width: 198px; }
+  .hero-phone.side { transform: translateY(36px); }
   .stats-grid { grid-template-columns: 1fr 1fr; }
 }
