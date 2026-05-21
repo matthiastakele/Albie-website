@@ -26,8 +26,8 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Albie Website <hello@albie-app.com>',
-        to: 'hello@albie-app.com',
+        from: 'Albie Website <onboarding@resend.dev>',
+        to: 'matthiastakele@gmail.com',
         reply_to: email,
         subject: `[${typeLabels[type] || type}] Message from ${name}`,
         html: `
