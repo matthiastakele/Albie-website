@@ -80,11 +80,10 @@ section { padding: 112px 40px; }
 /* ── Hero ── */
 .hero {
   padding-top: calc(var(--nav-h) + 96px);
-  padding-bottom: 0;
+  padding-bottom: 80px;
   text-align: center;
-  overflow: hidden;
 }
-.hero-inner { max-width: 740px; margin: 0 auto; padding: 0 40px 0; }
+.hero-inner { max-width: 740px; margin: 0 auto; }
 
 .hero-logo-wrap {
   display: flex; justify-content: center;
@@ -297,33 +296,29 @@ section { padding: 112px 40px; }
 .form-success h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
 .form-success p { color: var(--text-secondary); font-size: 16px; }
 
-/* ── Hero Phones ── */
+/* ── App Screenshots ── */
 .mockup-lead {
   font-size: 18px; color: var(--text-secondary);
   max-width: 540px; line-height: 1.7; margin-bottom: 72px;
 }
-.hero-phones {
+.screenshots-section {
+  padding: 0 40px 96px;
+  overflow: visible;
+}
+.phones-row {
   display: flex;
   gap: 20px;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 72px;
-  padding: 0 20px;
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 46%, transparent 84%);
-  mask-image: linear-gradient(to bottom, black 0%, black 46%, transparent 84%);
-  pointer-events: none;
 }
 .hero-phone { flex-shrink: 0; }
-.hero-phone.side { transform: translateY(56px); }
+.hero-phone.side { transform: translateY(48px); }
 .hero-phone.center { transform: translateY(0); }
 .phone-frame {
   background: #1A1A1C;
   border-radius: 52px;
   padding: 11px;
-  box-shadow:
-    0 40px 100px rgba(0,0,0,0.28),
-    0 10px 30px rgba(0,0,0,0.18),
-    inset 0 0 0 1.5px rgba(255,255,255,0.09);
+  filter: drop-shadow(0 32px 64px rgba(0,0,0,0.22)) drop-shadow(0 8px 20px rgba(0,0,0,0.14));
 }
 .hero-phone.side .phone-frame { width: 256px; }
 .hero-phone.center .phone-frame { width: 296px; }
@@ -364,25 +359,27 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
 }
 @media (max-width: 860px) {
   .hero-phone.side .phone-frame { width: 210px; }
-  .hero-phone.center .phone-frame { width: 245px; }
-  .hero-phone.side { transform: translateY(44px); }
+  .hero-phone.center .phone-frame { width: 244px; }
+  .hero-phone.side { transform: translateY(40px); }
+  .gap-cards { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
 }
 @media (max-width: 740px) {
   nav { padding: 0 20px; }
   section { padding: 80px 20px; }
+  .screenshots-section { padding: 0 16px 72px; }
   .problem-wrap { margin: 0 16px; padding: 72px 28px; }
   .stats-wrap { margin: 0 16px; padding: 64px 28px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .form-row-2 { grid-template-columns: 1fr; }
   .contact-form-card { padding: 28px 20px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .hero { padding-top: calc(var(--nav-h) + 48px); }
-  .hero-inner { padding-bottom: 0; }
+  .hero { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 56px; }
   .hero h1 { font-size: clamp(36px, 10vw, 56px); }
   .hero-sub { font-size: 17px; }
-  .hero-phones { gap: 12px; margin-top: 52px; }
-  .hero-phone.side .phone-frame { width: 168px; }
-  .hero-phone.center .phone-frame { width: 198px; }
-  .hero-phone.side { transform: translateY(36px); }
+  .phones-row { gap: 10px; }
+  .hero-phone.side .phone-frame { width: 156px; }
+  .hero-phone.center .phone-frame { width: 184px; }
+  .hero-phone.side { transform: translateY(28px); }
   .stats-grid { grid-template-columns: 1fr 1fr; }
 }
