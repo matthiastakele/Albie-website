@@ -376,20 +376,25 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
 }
 @media (max-width: 740px) {
   nav { padding: 0 20px; }
-  section { padding: 80px 20px; }
-  .screenshots-section { padding: 16px 12px 80px; }
-  .phones-row { gap: 10px; }
-  .hero-phone.side .phone-frame { width: 150px; }
-  .hero-phone.center .phone-frame { width: 174px; }
-  .hero-phone.side { transform: translateY(20px); }
-  .problem-wrap { margin: 0 16px; padding: 72px 28px; }
-  .stats-wrap { margin: 0 16px; padding: 64px 28px; }
+  section { padding: 72px 20px; }
+  .screenshots-section { padding: 16px 20px 72px; overflow: hidden; }
+  /* phones: hide sides on small screens, show only center large */
+  .phones-row { gap: 12px; justify-content: center; }
+  .hero-phone.side { display: none; }
+  .hero-phone.center { transform: none; }
+  .hero-phone.center .phone-frame { width: 260px; }
+  .problem-wrap { margin: 0 16px; padding: 64px 28px; }
+  .stats-wrap { margin: 0 16px; padding: 56px 24px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .solution-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .form-row-2 { grid-template-columns: 1fr; }
   .contact-form-card { padding: 28px 20px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .hero { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 56px; }
-  .hero h1 { font-size: clamp(36px, 10vw, 56px); }
+  .hero { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 48px; }
+  .hero h1 { font-size: clamp(36px, 10vw, 52px); }
   .hero-sub { font-size: 17px; }
-  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .gap-footer { font-size: 16px; }
+  .stats-footer { font-size: 16px; }
+  .cta-banner p { font-size: 17px; }
 }
