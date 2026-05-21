@@ -377,7 +377,7 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
 @media (max-width: 740px) {
   nav { padding: 0 20px; }
   section { padding: 72px 20px; }
-  .screenshots-section { padding: 16px 0 72px; overflow: hidden; }
+  .screenshots-section { padding: 16px 0 72px; }
   /* swipeable carousel — scroll snap, one phone at a time */
   .phones-row {
     overflow-x: auto;
