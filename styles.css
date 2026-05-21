@@ -298,6 +298,14 @@ footer {
 .form-success h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
 .form-success p { color: var(--text-secondary); font-size: 16px; }
 
+/* ── Gradient text ── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ── Fade-in animation ── */
 .fade-in {
   opacity: 0; transform: translateY(20px);
