@@ -15,8 +15,7 @@
   <!-- ── Nav ── -->
   <nav>
     <a href="/" class="nav-logo">
-      <img src="/albie_logo.svg" class="logo-mark" width="28" height="28" alt="Albie">
-      <span class="nav-wordmark">ALBIE</span>
+      <img src="/albie_logo.svg" height="22" style="width:auto;display:block;" alt="Albie">
     </a>
     <div class="nav-links">
       <a href="#how-it-works">How it works</a>
@@ -29,12 +28,11 @@
   <section class="hero">
     <div class="container fade-in">
       <div class="hero-logo">
-        <img src="/albie_logo.svg" class="logo-mark" width="56" height="56" alt="Albie">
-        <span class="hero-wordmark">ALBIE</span>
+        <img src="/albie_logo.svg" height="48" style="width:auto;display:block;" alt="Albie">
       </div>
 
       <h1>Your <span class="gradient-text">social camera roll.</span></h1>
-      <p>The album-centric platform for authentic, pressure-free sharing. Share everything — no algorithm, no public likes, just your life.</p>
+      <p class="hero-sub">The album-centric platform for authentic, pressure-free sharing.<br>Share everything — no algorithm, no public likes, just your life.</p>
 
       <div class="hero-cta">
         <a href="https://testflight.apple.com/join/ATGr8Ppr" class="btn btn-primary">
@@ -177,7 +175,7 @@
   <section class="cta-banner">
     <div class="container fade-in">
       <h2>The archive for<br>real memories.</h2>
-      <p>Join us in building a more human way to share life online. We're in private beta — iOS only right now.</p>
+      <p>Join us in building a more human way to share life online.<br>We're in private beta — iOS only right now.</p>
       <a href="https://testflight.apple.com/join/ATGr8Ppr" class="btn btn-primary" style="font-size: 16px; padding: 14px 32px;">
         Get Early Access on TestFlight
       </a>
@@ -197,7 +195,6 @@
 
       <div class="contact-grid">
 
-        <!-- Left: quick links -->
         <div class="contact-info fade-in">
           <h3>Other ways to reach us</h3>
           <div class="contact-links">
@@ -242,13 +239,10 @@
           </div>
         </div>
 
-        <!-- Right: form -->
         <div id="contact-form" class="fade-in">
           <div class="contact-form">
-
             <div id="form-wrapper">
               <form id="contact-form-el">
-
                 <div class="form-row-2">
                   <div class="form-group">
                     <label for="name">Name</label>
@@ -259,7 +253,6 @@
                     <input type="email" id="email" name="email" placeholder="anna@example.com" required>
                   </div>
                 </div>
-
                 <div class="form-group">
                   <label for="type">I'm reaching out about</label>
                   <select id="type" name="type" required>
@@ -272,27 +265,22 @@
                     <option value="other">Something else</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="message">Message</label>
                   <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
                 </div>
-
                 <div class="form-submit">
                   <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 14px;">
                     Send message
                   </button>
                 </div>
-
               </form>
             </div>
-
             <div class="form-success" id="form-success-inline">
               <div class="success-icon">✉️</div>
               <h3>Message sent.</h3>
               <p>Thanks for reaching out — we'll get back to you within a couple of days.</p>
             </div>
-
           </div>
         </div>
 
@@ -304,8 +292,7 @@
   <footer>
     <div class="footer-inner">
       <a href="/" class="footer-logo">
-        <img src="/albie_logo.svg" width="20" height="20" alt="Albie">
-        <span class="footer-wordmark">ALBIE</span>
+        <img src="/albie_logo.svg" height="18" style="width:auto;display:block;" alt="Albie">
       </a>
       <div class="footer-links">
         <a href="#contact">Contact</a>
@@ -325,8 +312,7 @@
 
     document.getElementById('contact-form-el').addEventListener('submit', async function(e) {
       e.preventDefault();
-      const form = e.target;
-      const data = Object.fromEntries(new FormData(form));
+      const data = Object.fromEntries(new FormData(e.target));
       try {
         const res = await fetch('/api/contact', {
           method: 'POST',
