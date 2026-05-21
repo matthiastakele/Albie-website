@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Albie</title>
+  <meta name="description" content="Get in touch with the Albie team — investors, press, partnerships, or general questions.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <a href="/" class="nav-logo">
+      <svg class="logo-mark" width="28" height="28" viewBox="0 0 36 36" fill="none">
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#45C9BB" transform="rotate(0 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#4DC8CC" transform="rotate(18 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52C0E0" transform="rotate(36 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52BAF0" transform="rotate(54 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(72 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(90 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#72A6F0" transform="rotate(108 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#829BEF" transform="rotate(126 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#8E93ED" transform="rotate(144 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9788EB" transform="rotate(162 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9B7FE8" transform="rotate(180 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9788EB" transform="rotate(198 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#8E93ED" transform="rotate(216 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#829BEF" transform="rotate(234 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#72A6F0" transform="rotate(252 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(270 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(288 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52BAF0" transform="rotate(306 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52C0E0" transform="rotate(324 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#4DC8CC" transform="rotate(342 18 18)"/>
+      </svg>
+      <span class="nav-wordmark">ALBIE</span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="https://testflight.apple.com/join/ATGr8Ppr" class="btn btn-primary" style="padding: 7px 18px; font-size: 13px;">Join Beta</a>
+    </div>
+  </nav>
+
+  <!-- ── Contact ── -->
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-header fade-in">
+        <div class="eyebrow">Get in touch</div>
+        <h1>Say hello.</h1>
+        <p>We're a small team building something we care deeply about.<br>We read every message.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: quick links -->
+        <div class="contact-info fade-in">
+          <h3>Other ways to reach us</h3>
+          <div class="contact-links">
+
+            <a id="investors" href="#contact-form" class="contact-link-item" onclick="document.querySelector('[name=type]').value='investors'">
+              <div class="contact-link-icon">💼</div>
+              <div>
+                <div class="contact-link-label">Investors</div>
+                <div class="contact-link-desc">Interested in the pre-seed round? We'd love to share the deck.</div>
+              </div>
+            </a>
+
+            <a id="press" href="#contact-form" class="contact-link-item" onclick="document.querySelector('[name=type]').value='press'">
+              <div class="contact-link-icon">📰</div>
+              <div>
+                <div class="contact-link-label">Press</div>
+                <div class="contact-link-desc">Writing about authentic social or Gen Z? We have data and a story to tell.</div>
+              </div>
+            </a>
+
+            <a href="#contact-form" class="contact-link-item" onclick="document.querySelector('[name=type]').value='partnerships'">
+              <div class="contact-link-icon">🤝</div>
+              <div>
+                <div class="contact-link-label">Partnerships</div>
+                <div class="contact-link-desc">Creator programs, brand collaborations, integrations.</div>
+              </div>
+            </a>
+
+            <a href="https://testflight.apple.com/join/ATGr8Ppr" class="contact-link-item">
+              <div class="contact-link-icon">📱</div>
+              <div>
+                <div class="contact-link-label">Join the beta</div>
+                <div class="contact-link-desc">Download Albie on TestFlight — iOS only for now.</div>
+              </div>
+            </a>
+
+          </div>
+
+          <div style="margin-top: 32px; padding: 24px; background: var(--surface); border-radius: 16px;">
+            <div style="font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; letter-spacing: 0.01em;">Email us directly</div>
+            <a href="mailto:hello@albie-app.com" style="font-size: 16px; font-weight: 600; color: var(--blue); text-decoration: none;">hello@albie-app.com</a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div id="contact-form" class="fade-in">
+          <div class="contact-form">
+
+            <div id="form-wrapper">
+              <!-- Replace YOUR_FORM_ID with your Formspree form ID after signing up at formspree.io -->
+              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact">
+
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Anna Barber" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="anna@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="type">I'm reaching out about</label>
+                  <select id="type" name="type" required>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="general">General inquiry</option>
+                    <option value="investors">Investment / Pre-seed round</option>
+                    <option value="press">Press / Media</option>
+                    <option value="partnerships">Partnerships</option>
+                    <option value="beta">Beta feedback</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 14px;">
+                    Send message
+                  </button>
+                </div>
+
+              </form>
+            </div>
+
+            <div class="form-success" id="form-success">
+              <div class="success-icon">✉️</div>
+              <h3>Message sent.</h3>
+              <p>Thanks for reaching out — we'll get back to you within a couple of days.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 36 36" fill="none">
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#45C9BB" transform="rotate(0 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(72 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9B7FE8" transform="rotate(180 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(270 18 18)"/>
+        </svg>
+        <span class="footer-wordmark">ALBIE</span>
+      </a>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span class="footer-copy">© 2026 Albie</span>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Form success state
+    document.getElementById('contact').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+
+      // Skip Formspree if placeholder ID is still in place
+      if (form.action.includes('YOUR_FORM_ID')) {
+        document.getElementById('form-wrapper').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+        return;
+      }
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST', body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          document.getElementById('form-wrapper').style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          alert('Something went wrong. Please email us at hello@albie-app.com');
+        }
+      } catch {
+        alert('Something went wrong. Please email us at hello@albie-app.com');
+      }
+    });
+  </script>
+</body>
+</html>

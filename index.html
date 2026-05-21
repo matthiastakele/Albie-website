@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albie — The Social Camera Roll</title>
+  <meta name="description" content="Albie is the album-centric social platform for authentic, pressure-free sharing. Share everything — no filters, no algorithm, no public likes.">
+  <meta property="og:title" content="Albie — The Social Camera Roll">
+  <meta property="og:description" content="Share everything. No algorithm. No public likes. Just your life, shared your way.">
+  <meta property="og:url" content="https://albie-app.com">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Logo mark SVG inline — reused across pages */
+    .logo-mark { flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <a href="/" class="nav-logo">
+      <svg class="logo-mark" width="28" height="28" viewBox="0 0 36 36" fill="none">
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#45C9BB" transform="rotate(0 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#4DC8CC" transform="rotate(18 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52C0E0" transform="rotate(36 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52BAF0" transform="rotate(54 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(72 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(90 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#72A6F0" transform="rotate(108 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#829BEF" transform="rotate(126 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#8E93ED" transform="rotate(144 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9788EB" transform="rotate(162 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9B7FE8" transform="rotate(180 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9788EB" transform="rotate(198 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#8E93ED" transform="rotate(216 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#829BEF" transform="rotate(234 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#72A6F0" transform="rotate(252 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(270 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(288 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52BAF0" transform="rotate(306 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52C0E0" transform="rotate(324 18 18)"/>
+        <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#4DC8CC" transform="rotate(342 18 18)"/>
+      </svg>
+      <span class="nav-wordmark">ALBIE</span>
+    </a>
+    <div class="nav-links">
+      <a href="#how-it-works">How it works</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://testflight.apple.com/join/ATGr8Ppr" class="btn btn-primary" style="padding: 7px 18px; font-size: 13px;">Join Beta</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="container fade-in">
+      <div class="hero-logo">
+        <svg class="logo-mark" width="56" height="56" viewBox="0 0 36 36" fill="none">
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#45C9BB" transform="rotate(0 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#4DC8CC" transform="rotate(18 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52C0E0" transform="rotate(36 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52BAF0" transform="rotate(54 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(72 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(90 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#72A6F0" transform="rotate(108 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#829BEF" transform="rotate(126 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#8E93ED" transform="rotate(144 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9788EB" transform="rotate(162 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9B7FE8" transform="rotate(180 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9788EB" transform="rotate(198 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#8E93ED" transform="rotate(216 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#829BEF" transform="rotate(234 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#72A6F0" transform="rotate(252 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(270 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(288 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52BAF0" transform="rotate(306 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52C0E0" transform="rotate(324 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#4DC8CC" transform="rotate(342 18 18)"/>
+        </svg>
+        <span class="hero-wordmark">ALBIE</span>
+      </div>
+
+      <h1>Your <span class="blue">social camera roll.</span></h1>
+      <p>The album-centric platform for authentic, pressure-free sharing. Share everything — no algorithm, no public likes, just your life.</p>
+
+      <div class="hero-cta">
+        <a href="https://testflight.apple.com/join/ATGr8Ppr" class="btn btn-primary">
+          Join the Private Beta
+        </a>
+        <a href="#problem" class="btn btn-ghost">Learn more</a>
+      </div>
+      <p class="hero-note">iOS only · Private beta via TestFlight</p>
+    </div>
+  </section>
+
+  <!-- ── Problem ── -->
+  <div id="problem" class="fade-in">
+    <div class="problem-wrap">
+      <h2>
+        <span class="small">You took</span>
+        <span class="blue">10,000 photos</span> last year.
+      </h2>
+      <div class="divider-dot"></div>
+      <h2 style="margin-bottom: 28px;">Your friends saw <span class="blue">30.</span></h2>
+      <p class="problem-sub">There is no platform designed for sharing your actual life.</p>
+    </div>
+  </div>
+
+  <!-- ── The Gap ── -->
+  <section class="gap">
+    <div class="container">
+      <div class="fade-in">
+        <h2>You have 3 options. <span class="purple">None of them work.</span></h2>
+        <p class="gap-lead">Every era of social solved one thing — and left a gap.</p>
+      </div>
+      <div class="gap-cards">
+        <div class="gap-card fade-in">
+          <div class="gap-card-platform">Instagram</div>
+          <h3>Too Curated</h3>
+          <p>Pick a few shots. Agonize over the grid. Hope the algorithm shows it to someone.</p>
+          <div class="verdict">It's a performance.</div>
+        </div>
+        <div class="gap-card fade-in">
+          <div class="gap-card-platform">BeReal</div>
+          <h3>Too Small</h3>
+          <p>Take 1 photo. At a random time. That's it. That's your whole day.</p>
+          <div class="verdict">It misses 99% of life.</div>
+        </div>
+        <div class="gap-card fade-in">
+          <div class="gap-card-platform">Camera Roll</div>
+          <h3>Too Quiet</h3>
+          <p>Dump 100 photos into a folder. Nobody comments. Nobody sees them.</p>
+          <div class="verdict">It's a filing cabinet.</div>
+        </div>
+      </div>
+      <p class="gap-footer fade-in">
+        <strong>The Facebook Album is dead.</strong> <span class="blue">Nothing replaced it.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Solution ── -->
+  <section class="solution" id="how-it-works">
+    <div class="container">
+      <div class="fade-in">
+        <div class="eyebrow">The Insight</div>
+        <h2>What if you could just <span class="blue">share all of them?</span></h2>
+        <p class="solution-lead">
+          Albie is a social camera roll. Go on a trip? Drop all 150 photos.
+          Wild weekend? Share the whole thing — not just the highlight reel.
+          Working on something? Let friends watch the process unfold.
+        </p>
+      </div>
+
+      <div class="solution-grid">
+        <div class="solution-card fade-in">
+          <div class="solution-card-icon">📸</div>
+          <h3>Up to 100 photos</h3>
+          <p>No more picking favorites. Dump everything into one album, in any order.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card-icon">👥</div>
+          <h3>Collaborative</h3>
+          <p>Invite friends to add their photos. Every perspective in one place.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card-icon">🔁</div>
+          <h3>Chronological feed</h3>
+          <p>No algorithm. See albums from people you follow, in the order they posted.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card-icon">🙈</div>
+          <h3>No public likes</h3>
+          <p>Only you see who liked your posts. Post freely — no performance anxiety.</p>
+        </div>
+        <div class="solution-card fade-in">
+          <div class="solution-card-icon">✨</div>
+          <h3>Templates</h3>
+          <p>Create reusable album structures. "Graduation," "Wedding," "Friday Night" — fill in the prompts.</p>
+        </div>
+      </div>
+
+      <p class="solution-quote fade-in">
+        No filters. No public likes — only you see who liked your posts.<br>
+        No algorithm. <strong>Just <span class="blue">your life, shared your way.</span></strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <div class="fade-in" style="padding: 0 0 96px;">
+    <div class="stats-wrap">
+      <div class="stats-label">The opportunity</div>
+      <div class="stats-grid">
+        <div>
+          <div class="stat-num blue">5B+</div>
+          <div class="stat-title">TikTok "photo dump" views</div>
+          <div class="stat-desc">People share life in bulk — just not on a platform built for it.</div>
+        </div>
+        <div>
+          <div class="stat-num blue">100M+</div>
+          <div class="stat-title">BeReal downloads in 2 years</div>
+          <div class="stat-desc">Users actively searching for alternatives to performative social.</div>
+        </div>
+        <div>
+          <div class="stat-num purple">95%</div>
+          <div class="stat-title">of Gen Z say social harms mental health</div>
+          <div class="stat-desc">The appetite for something different is real. <span style="opacity:0.6">(APA, 2023)</span></div>
+        </div>
+        <div>
+          <div class="stat-num purple">1T+</div>
+          <div class="stat-title">photos taken globally every year</div>
+          <div class="stat-desc">The camera roll is the archive of modern life — with no social layer.</div>
+        </div>
+      </div>
+      <p class="stats-footer">
+        People already document their lives this way.
+        <span class="blue">No platform has been built around it.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <section class="cta-banner">
+    <div class="container fade-in">
+      <h2>The archive for<br>real memories.</h2>
+      <p>Join us in building a more human way to share life online. We're in private beta — iOS only right now.</p>
+      <a href="https://testflight.apple.com/join/ATGr8Ppr" class="btn btn-primary" style="font-size: 16px; padding: 14px 32px;">
+        Get Early Access on TestFlight
+      </a>
+      <p class="cta-note">Investors, press, or partnerships? <a href="contact.html" style="color: var(--blue); text-decoration: none; font-weight: 600;">Contact us →</a></p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 36 36" fill="none">
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#45C9BB" transform="rotate(0 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#52B3F0" transform="rotate(72 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#9B7FE8" transform="rotate(180 18 18)"/>
+          <ellipse cx="18" cy="6" rx="1.5" ry="4.5" fill="#60AEF2" transform="rotate(270 18 18)"/>
+        </svg>
+        <span class="footer-wordmark">ALBIE</span>
+      </a>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#press">Press</a>
+        <a href="contact.html#investors">Investors</a>
+      </div>
+      <span class="footer-copy">© 2026 Albie</span>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
