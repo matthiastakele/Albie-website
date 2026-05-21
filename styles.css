@@ -313,7 +313,7 @@ section { padding: 112px 40px; }
   justify-content: center;
 }
 .hero-phone { flex-shrink: 0; }
-.hero-phone.side { transform: translateY(32px); }
+.hero-phone.side { transform: translateY(40px); }
 .hero-phone.center { transform: translateY(0); }
 .phone-frame {
   background: #1A1A1C;
@@ -321,8 +321,8 @@ section { padding: 112px 40px; }
   padding: 10px;
   filter: drop-shadow(0 24px 48px rgba(0,0,0,0.20)) drop-shadow(0 6px 16px rgba(0,0,0,0.12));
 }
-.hero-phone.side .phone-frame { width: 240px; }
-.hero-phone.center .phone-frame { width: 276px; }
+.hero-phone.side .phone-frame { width: 300px; }
+.hero-phone.center .phone-frame { width: 344px; }
 .phone-screen {
   border-radius: 42px;
   overflow: hidden;
@@ -367,9 +367,9 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
 }
 @media (max-width: 860px) {
-  .hero-phone.side .phone-frame { width: 200px; }
-  .hero-phone.center .phone-frame { width: 232px; }
-  .hero-phone.side { transform: translateY(24px); }
+  .hero-phone.side .phone-frame { width: 240px; }
+  .hero-phone.center .phone-frame { width: 276px; }
+  .hero-phone.side { transform: translateY(28px); }
   .gap-cards { grid-template-columns: 1fr; }
   .solution-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
@@ -377,7 +377,7 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
 @media (max-width: 740px) {
   nav { padding: 0 20px; }
   section { padding: 72px 20px; }
-  .screenshots-section { padding: 16px 0 72px; }
+  .screenshots-section { padding: 16px 0 0; }
   /* swipeable carousel — scroll snap, one phone at a time */
   .phones-row {
     overflow-x: auto;
@@ -386,7 +386,7 @@ footer { border-top: 1px solid var(--border); padding: 40px 40px; }
     scrollbar-width: none;
     justify-content: flex-start;
     gap: 16px;
-    padding: 8px calc(50% - 130px) 24px;
+    padding: 48px calc(50% - 130px) 80px;
   }
   .phones-row::-webkit-scrollbar { display: none; }
   .hero-phone.side { display: flex; transform: none; }
