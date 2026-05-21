@@ -104,8 +104,7 @@
           <div class="contact-form">
 
             <div id="form-wrapper">
-              <!-- Replace YOUR_FORM_ID with your Formspree form ID after signing up at formspree.io -->
-              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact">
+              <form action="/api/contact" method="POST" id="contact">
 
                 <div class="form-row-2">
                   <div class="form-group">
@@ -190,19 +189,13 @@
     document.getElementById('contact').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = e.target;
-      const data = new FormData(form);
-
-      // Skip Formspree if placeholder ID is still in place
-      if (form.action.includes('YOUR_FORM_ID')) {
-        document.getElementById('form-wrapper').style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-        return;
-      }
+      const data = Object.fromEntries(new FormData(form));
 
       try {
-        const res = await fetch(form.action, {
-          method: 'POST', body: data,
-          headers: { 'Accept': 'application/json' }
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
         });
         if (res.ok) {
           document.getElementById('form-wrapper').style.display = 'none';
