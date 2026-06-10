@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/.well-known/apple-app-site-association", "destination": "https://albie-backend-dev.onrender.com/.well-known/apple-app-site-association" },
+    { "source": "/.well-known/assetlinks.json", "destination": "https://albie-backend-dev.onrender.com/.well-known/assetlinks.json" },
+    { "source": "/albie/:id*", "destination": "https://albie-backend-dev.onrender.com/albie/:id*" },
+    { "source": "/profile/:username*", "destination": "https://albie-backend-dev.onrender.com/profile/:username*" },
+    { "source": "/template/:id*", "destination": "https://albie-backend-dev.onrender.com/template/:id*" }
+  ]
+}
